@@ -1,34 +1,78 @@
-<!DOCTYPE html>
 <html>
-    <head>
-       <link rel="stylesheet" href="styles.css">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        
-         <style>
-        /* body {
-          background-image: url('bg.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+  var md = new MobileDetect(window.navigator.userAgent);
+  if (md.mobile() || md.tablet()) {
+    document.location.href = 'mobile-page.html';
+  }
+</script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      position: 0;
+      left:  0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-color: black;
+      background-image: url(bg.png);
+    }
+    /* .apply {
+            background-color: #4293f5;
+            border: 2px white;
+            border-radius: 9px;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 10px;
+            font-style: Montserrat;
+            margin-left:-50px;
+            cursor: pointer;
+            position: absolute;
+            left:50%;
+            width:100px;
+            bottom:0px;
         } */
-        </style>
-    </head>
-    <body>
-        <h1 id="title">AIRCRAFT LANDING GEAR TRUNNION</h1>
-        <div class='container'> </div>
-            <div id='image'> 
-                <img src="bg.jpg"  class='center'style="width:400px;height:400px;">
-                <p id='text'>The trunnion is a fixed structural extension of the upper strut cylinder with bearing surfaces that allow the entire gear assembly to move. It is attached to aircraft structure in such a way that the gear can pivot from the vertical position required for landing and taxi to the stowed position used during flight. </p>
-                <p id='points'>Manufacturer: 
-                    Coltec Industries Inc<br>
-                    Last Inspection Date: 11.12.2021<br>
-                    Next Inspection Date: 04.02.2022</p>
-            </div>
-            <form action='./index.html'>
-                <button id='next'  class='button'> <span>HOME </span> </button>
+        .contact {
+                background-color: #4293f5;
+                border: 2px white;
+                border-radius: 2px;
+                color: white;
+                padding: 5px 10px;
+                text-align: center;
+                display: inline-block;
+                font-size: 10px;
+                font-family: 'Montserrat', sans-serif;
+                margin: 10px 10px;
+                cursor: pointer;
+                position: absolute;
+                left:38%;
+                width:150px;
+                bottom:80px;
+            }
 
-            </form>
-    </body>
+    </style>
+</head>
+<body>
+<div class="container"></div>
+<!-- <button class="apply"
+  onclick=" window.open('https://forms.gle/','_blank')">
+      We are hiring
+  </button> -->
+  <div>
+    <button class="contact"
+    onclick="location.href='mailto:';">Join Our Community</button>
+  </div>
+</body>
 </html>
